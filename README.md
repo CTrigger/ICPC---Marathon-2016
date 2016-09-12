@@ -7,8 +7,7 @@ Algorithm Solutions.
 
 
 
-<html>
-<head><meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
 <style type="text/css">
 <!--
 span.cls_003{font-family:Arial,serif;font-size:8.1px;color:rgb(28,29,29);font-weight:bold;font-style:normal;text-decoration: none}
@@ -56,8 +55,7 @@ div.cls_022{font-family:Arial,serif;font-size:14.0px;color:rgb(0,0,0);font-weigh
 -->
 </style>
 <script type="text/javascript" src="c6d5b332-7921-11e6-89aa-002590d31986_id_maratona[1]_files/wz_jsgraphics.js"></script>
-</head>
-<body>
+
 <div style="position:absolute;left:50%;margin-left:-297px;top:0px;width:595px;height:841px;border-style:outset;overflow:hidden">
 <div style="position:absolute;left:0px;top:0px">
 <img src="c6d5b332-7921-11e6-89aa-002590d31986_id_maratona[1]_files/background01.jpg" width=595 height=841></div>
@@ -898,5 +896,3 @@ div.cls_022{font-family:Arial,serif;font-size:14.0px;color:rgb(0,0,0);font-weigh
 <div style="position:absolute;left:77.98px;top:733.13px" class="cls_013"><span class="cls_013">2 2 2 2 0 2</span></div>
 </div>
 
-</body>
-</html>

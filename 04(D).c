@@ -1,3 +1,8 @@
+/*
+https://www.urionlinejudge.com.br/judge/pt/problems/view/2238
+Esse é um problema de optimização matemática.
+*/
+
 #include <stdio.h>
 #include<stdlib.h>
 #include<math.h>
@@ -21,10 +26,16 @@ int main(int argc, char **argv) {
 	limit = (int) sqrt(c);
 
 	for (i = 1; i <= limit; i++) {
+		//esse trecho armazena todos os N possível até a metade 
+		//de seus divisores possiveis substituindo - os
+		//sendo N = C/i
 		if (condC && condA && condB && condD) {
 			ans = c/i;
 		}
 
+		//esse trecho testa o divisor em sua sequencia
+		//aqui o primeiro que encontrar é o menor N possível.
+		//por isso ele encerra o programa aqui.
 		if( i % a == 0 && c % i == 0 && i % b != 0 && d % i != 0 ){
 			printf("%d\n", i);
 			return 0;

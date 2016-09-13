@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include<stdlib.h>
+#include<math.h>
 
 #define condC c%i==0
 #define condA c%(i*a)==0
@@ -8,38 +9,31 @@
 
 int main(int argc, char **argv) {
 	int a, b, c, d;
-	int i;
-//	freopen("D/in2", "r", stdin);
+	int i, ans=-1,limit;
 
-	/*
-	 ==================
-	 test 1
-	 2 12 8 2
-
-	 output
-	 4
-	 =================
-	 test 2
-	 3 4 60 105
-
-	 output
-	 6
-	 ==================
-	 */
+/*
+#ifndef ONLINE_JUDGE
+	freopen("D/i1", "r", stdin);
+#endif
+*/
 	scanf("%d %d %d %d", &a, &b, &c, &d);
 
+	limit = (int) sqrt(c);
 
-
-	for (i = c; i / 2 > 0; i--) {
+	for (i = 1; i <= limit; i++) {
 		if (condC && condA && condB && condD) {
-			printf("%d\n", c / i);
-			return 0;
-
+			ans = c/i;
 		}
 
-	}
-	puts("-1");
+		if( i % a == 0 && c % i == 0 && i % b != 0 && d % i != 0 ){
+			printf("%d\n", i);
+			return 0;
+		}
 
+
+	}
+
+	printf("%d\n",ans);
 
 	return 0;
 
